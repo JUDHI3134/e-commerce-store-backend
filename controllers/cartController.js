@@ -29,7 +29,7 @@ const addToCart = async (req,res) =>{
 }
 
 
-//add product to user cart
+//update to user cart
 const updateCart = async (req,res) =>{
     try {
         const {userId, itemId, size, quantity} = req.body;
@@ -48,7 +48,7 @@ const updateCart = async (req,res) =>{
 }
 
 
-//add product to user cart
+//get user cart
 const getUserCart = async (req,res) =>{
    try {
     const {userId} = req.body;

@@ -4,7 +4,7 @@ import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
 
 const createToken = (id) =>{
-    return jwt.sign({id},process.env.JWT_SECRET)
+    return jwt.sign( {id} ,process.env.JWT_SECRET)
 }
 
 //Route for User Login
