@@ -86,7 +86,7 @@ const placeOrderStripe = async (req,res) =>{
             mode: 'payment',
         })
 
-        res.json({success:true, session_url : session_url})
+        res.json({success:true, session_url : session.url})
 
 
 
